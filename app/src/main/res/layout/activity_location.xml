@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#4b4949"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:orientation="vertical"
+        android:background="@drawable/btn1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:id="@+id/tvAddress"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/back1"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Show Address"
+            android:fontFamily="serif"
+            android:background="@drawable/roundbutton"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="17dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/btnShowAddress"
+            android:layout_alignEnd="@+id/button2" />
+
+        <Button
+            android:text="Share Location"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:background="@drawable/roundbutton"
+            android:layout_marginLeft="20dp"
+            android:onClick="pickContact"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:drawableRight="@drawable/button_icon"
+            android:layout_below="@+id/btnShowAddress"
+            />
+
+        <Button
+            android:text="Ask location"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_gravity="right"
+            android:background="@drawable/roundbutton"
+            android:layout_marginLeft="20dp"
+            android:onClick="contact"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "893509132814",
+    "project_id": "firebase-nitmate"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893509132814:android:6a6f5484180a2d9e",
+        "android_client_info": {
+          "package_name": "com.parveen.nitmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893509132814-50vqccdrq98n12vur734vqv3f54jdg4t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.parveen.nitmate",
+            "certificate_hash": "D0B2148A48B278A4872E19C2607226122B658C76"
+          }
+        },
+        {
+          "client_id": "893509132814-jmtgfe0ve460mm7breicfsd6altntab2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdSpr5PVgBPwMwWjYr7EpedQ9TeIlSKvQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

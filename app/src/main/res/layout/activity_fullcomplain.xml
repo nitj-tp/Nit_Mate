@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+
+    android:background="@color/green"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complaint"
+        android:gravity="left"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="#FFF"
+        android:background="@color/colorAccent"
+        android:textSize="22dp"/>
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="25dp"
+    android:padding="10dp"
+    android:background="@color/yellow"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightyellow"
+        android:padding="5dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:text="Topic"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightyellow"
+        android:padding="5dp"
+        android:id="@+id/fulltopic" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightyellow"
+        android:padding="5dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:text="Description"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/lightyellow"
+        android:id="@+id/fulldescription" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightyellow"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:text="To Department"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/lightyellow"
+        android:id="@+id/fullto" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightyellow"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textSize="17dp"
+        android:text="By"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightyellow"
+        android:padding="5dp"
+        android:id="@+id/fullname" />
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
