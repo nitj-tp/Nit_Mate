@@ -1,8 +1,5 @@
 package com.parveen.nitmate;
 
-/**
- * Created by Hp W8.1 ori on 02-01-2017.
- */
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -60,10 +57,10 @@ public class login2 extends AppCompatActivity implements
         btnSignIn.setOnClickListener(this);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestEmail()
+                .requestEmail()                 // it is used for the configuration of GoogleAPI (entry point of google sign in)
                 .build();
 
-        mGoogleApiClient = new GoogleApiClient.Builder(this)
+        mGoogleApiClient = new GoogleApiClient.Builder(this)        //GoogleApiClient is used for integration of google play services in app
                 .enableAutoManage(this, this)
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
@@ -75,8 +72,9 @@ public class login2 extends AppCompatActivity implements
 
 
     private void signIn() {
-        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
-        startActivityForResult(signInIntent, RC_SIGN_IN);
+        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);  // getting intent from GoogleSignInAPI by
+        // passing our googleAPICLient
+        startActivityForResult(signInIntent, RC_SIGN_IN);       //the activity is called in background and result is handled here
     }
 
     private void handleSignInResult(GoogleSignInResult result) {
@@ -135,12 +133,12 @@ public class login2 extends AppCompatActivity implements
     }
 
     @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {  // it gets reuest code which was passed by startActivity for result
+        super.onActivityResult(requestCode, resultCode, data);                     // receive resultcode and data passed
 
         // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
         if (requestCode == RC_SIGN_IN) {
-            GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+            GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data); //GoogleSignInResult stores result of sign in request sent
             handleSignInResult(result);
         }
     }

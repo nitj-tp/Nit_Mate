@@ -51,13 +51,11 @@ public class MainActivity extends AppCompatActivity
 
     //#######################################
     LinearLayout ll;
-    public int currentimageindex=0;
-    Timer timer;
-    TimerTask task;
-    ImageView slidingimage;
+    public int currentimageindex=0; // flicker image id
+    ImageView slidingimage; // imageview flicker object
 
     private int[] IMAGE_IDS = {
-            R.drawable.a, R.drawable.b
+            R.drawable.a, R.drawable.b //flickering image ids
     };
     GridView grid;
     String[] web = {
@@ -65,7 +63,7 @@ public class MainActivity extends AppCompatActivity
             "Placements",
             "Students",
             "ComplainBox",
-            "Teachers" ,
+            "Lost & Found" ,
             "Video"
     } ;
     int[] imageId = {
@@ -73,7 +71,7 @@ public class MainActivity extends AppCompatActivity
             R.drawable.placement,
             R.drawable.student,
             R.drawable.complainbox,
-            R.drawable.teacher,
+            R.drawable.lost_found,
             R.drawable.video
     };
     //#############################
@@ -102,24 +100,24 @@ public class MainActivity extends AppCompatActivity
                 else {
                     Intent intent = new Intent(getApplicationContext(), check_internet.class);
                     intent.putExtra("position", position);
-                    Toast.makeText(getApplicationContext(), "You Clicked at " + position + "  " + web[+position], Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(getApplicationContext(), "You Clicked at " + position + "  " + web[+position], Toast.LENGTH_SHORT).show();
                     startActivity(intent);
                 }
 
             }
         });
-
-
-        setTitle("NIT Jalandhar");
+        //setTitle("NIT Jalandhar");
         setTitleColor(Color.WHITE);
         //##############################
         //******************************************
-        final Handler mHandler = new Handler();
+        final Handler mHandler = new Handler(); // thread will be used to do image flickering( bec image flickering in
+        // main activity will slow down its speed
+        // so handler is employed for communication b/w
+        //thread and main activity
 
         // Create runnable for posting
         final Runnable mUpdateResults = new Runnable() {
             public void run() {
-
                 AnimateandSlideShow();
 
             }
@@ -131,11 +129,12 @@ public class MainActivity extends AppCompatActivity
 
         Timer timer = new Timer();
 
-        timer.scheduleAtFixedRate(new TimerTask() {
+        timer.scheduleAtFixedRate // created timer for doing certain job at predefined interval of time
+                (new TimerTask() { //task
 
             public void run() {
 
-                mHandler.post(mUpdateResults);
+                mHandler.post(mUpdateResults); // handler will communicate the thread with our activity
 
             }
         }, delay, period);
@@ -169,8 +168,8 @@ public class MainActivity extends AppCompatActivity
         }
         else
         {
-            Glide.with(getApplicationContext()).load(imageurl).into(personimage);
-
+            Glide.with(getApplicationContext()).load(imageurl).into(personimage); //opensource media management and image loading framework
+                    // url toh image fetch kar lenda
         }
       /*  FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -199,14 +198,14 @@ public class MainActivity extends AppCompatActivity
     /**
      * Helper method to start the animation on the splash screen
      */
-    private void AnimateandSlideShow() {
+    private void AnimateandSlideShow() { //set current image resource
 
         slidingimage = (ImageView)findViewById(R.id.imageView);
         slidingimage.setImageResource(IMAGE_IDS[currentimageindex%IMAGE_IDS.length]);
 
         currentimageindex++;
 
-        Animation rotateimage = AnimationUtils.loadAnimation(this, R.anim.custom_anim);
+        Animation rotateimage = AnimationUtils.loadAnimation(this, R.anim.custom_anim); // for animation of going and coming image
 
         slidingimage.startAnimation(rotateimage);
 
@@ -254,15 +253,16 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
 
             // Handle the camera action
-        } else if (id == R.id.nav_location) {
+        } /*else if (id == R.id.nav_location) {
 
             Intent intent = new Intent(getApplication() , location.class);
             startActivity(intent);
-        } else if (id == R.id.nav_slideshow) {
 
-        } else if (id == R.id.nav_manage) {
+        }*/ else if (id == R.id.nav_slideshow) {
+            Intent intent = new Intent(getApplication() , upload_lost_found.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_support) {
+        }  else if (id == R.id.nav_support) {
             Toast.makeText(getApplicationContext(), "clicked  supoort", Toast.LENGTH_LONG).show();
             Intent intent = new Intent(getApplication() , support.class);
             startActivity(intent);
@@ -272,9 +272,8 @@ public class MainActivity extends AppCompatActivity
          signOut();
         }
         else if (id == R.id.nav_help) {
-            //finish();
-
-
+            Intent intent = new Intent(getApplication() , help.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

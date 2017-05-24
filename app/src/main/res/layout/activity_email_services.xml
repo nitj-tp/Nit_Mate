@@ -16,9 +16,11 @@
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:clickable="true"
-            android:src ="@drawable/ic_chevron_left_black_24dp"
+            android:paddingTop="13dp"
+            android:paddingLeft="10dp"
+            android:src ="@drawable/back_press"
             android:background="@color/colorAccent"
-            android:id="@+id/back"/>
+            android:id="@+id/back_press"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

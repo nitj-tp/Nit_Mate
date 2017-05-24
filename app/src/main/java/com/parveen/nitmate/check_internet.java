@@ -47,6 +47,12 @@ public class check_internet extends AppCompatActivity {
                     finish();
                     break;
                 }
+                case 4: {
+                    Intent in4 = new Intent(getApplicationContext(), lost_found_server.class);
+                    startActivity(in4);
+                    finish();
+                    break;
+                }
                 case 5:
                 {
                     Intent in5 = new Intent(getApplicationContext(), ImageListViewy.class);

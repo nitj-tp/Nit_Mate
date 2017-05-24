@@ -84,7 +84,7 @@ Intent in=getIntent();
     public void onBackPressed()
     {
         super.onBackPressed();
-        Toast.makeText(getApplicationContext() ,"back_press pressed" , Toast.LENGTH_LONG).show();
+       // Toast.makeText(getApplicationContext() ,"back_press pressed" , Toast.LENGTH_LONG).show();
        // Intent inback = new Intent(getApplicationContext() , MainActivity.class);
         //startActivity(inback);
 

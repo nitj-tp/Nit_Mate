@@ -55,7 +55,7 @@ public class Calendar extends Activity {
         setContentView(R.layout.activity_calendar);
         pr = (TextView)findViewById(R.id.present);
         ab = (TextView)findViewById(R.id.absent);
-        ttl = (TextView)findViewById(R.id.total);
+         ttl = (TextView)findViewById(R.id.total);
         pcnt = (TextView)findViewById(R.id.percent);
         datedb = new DateDb(getApplicationContext());
 

@@ -15,7 +15,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
-            android:paddingTop="10dp"
+            android:paddingTop="13dp"
+            android:paddingLeft="10dp"
             android:src ="@drawable/back_press"
             android:background="@color/colorAccent"
             android:id="@+id/back"/>
@@ -33,11 +34,10 @@
     </LinearLayout>
     <Button
         android:padding="10dp"
-        android:gravity="center"
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/b1"
-        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:background="#a3ecc4"
         android:textColor="#8869655e"
@@ -46,7 +46,9 @@ android:textStyle="bold"
     <ListView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:textColor="#350108"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
         android:id="@+id/list">
     </ListView>
 

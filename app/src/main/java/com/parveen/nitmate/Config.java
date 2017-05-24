@@ -13,4 +13,12 @@ public class Config {
     public static final String KEY_LPA = "lpa";
     public static final String KEY_BRANCH = "branch";
     public static final String JSON_ARRAY = "result";
+
+
+    public static final String LOST_FOUND_URL = "http://www.nitmate.esy.es/lost_found.php";
+    public static final String KEY_ITEM_LOST = "item";
+    public static final String KEY_DESCRIPTION_LOST = "description";
+    public static final String KEY_NAME_LOST = "name";
+    public static final String KEY_PHONE_LOST = "phone";
+
 }

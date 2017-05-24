@@ -23,8 +23,7 @@
         android:theme="@style/AppTheme.NoActionBar">
         <activity
             android:name=".login2"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,8 +33,7 @@
         <activity android:name=".placement" />
         <activity android:name=".ImageListViewy" />
         <activity android:name=".CardViewActivity" />
-        <activity android:name=".MainActivity"
-            />
+        <activity android:name=".MainActivity" />
         <activity android:name=".Calendar" />
         <activity android:name=".ListDemo" />
         <activity android:name=".collapsing" />
@@ -52,7 +50,11 @@
         <activity android:name=".get_complain_server" />
         <activity android:name=".getcomplains" />
         <activity android:name=".location" />
-        <activity android:name=".login_internet"></activity>
+        <activity android:name=".login_internet" />
+        <activity android:name=".lost_found_activity" />
+        <activity android:name=".upload_lost_found" />
+        <activity android:name=".lost_found_server" />
+        <activity android:name=".help"></activity>
     </application>
 
 </manifest>

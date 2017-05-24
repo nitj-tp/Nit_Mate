@@ -75,7 +75,7 @@ ImageView back;
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Toast.makeText(complainbox.this,"  this is respoms "+response+"good",Toast.LENGTH_LONG).show();
+                       // Toast.makeText(complainbox.this,"  this is respoms "+response+"good",Toast.LENGTH_LONG).show();
                     }
                 },
                 new Response.ErrorListener() {
@@ -96,7 +96,7 @@ ImageView back;
                 return params;
             }
         };
-        Toast.makeText(getApplicationContext() , " "+stopic+"  "+sdescription+" "+sto,Toast.LENGTH_LONG).show();
+       // Toast.makeText(getApplicationContext() , " "+stopic+"  "+sdescription+" "+sto,Toast.LENGTH_LONG).show();
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
     }

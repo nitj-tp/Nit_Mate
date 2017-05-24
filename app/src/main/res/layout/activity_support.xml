@@ -13,7 +13,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
-            android:paddingTop="10dp"
+            android:paddingTop="13dp"
+            android:paddingLeft="10dp"
             android:src ="@drawable/back_press"
             android:background="@color/colorAccent"
             android:id="@+id/back"/>
@@ -46,6 +47,29 @@
         android:layout_height="wrap_content"
         android:text="Send"
         android:id="@+id/buttonRegister" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/colorAccent"
+        android:textColor="#FFF"
+        android:text="Developed By"
+        android:gravity="center"/>
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Parveen Kaur and Tajinder Singh "/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="CSE 3rd year "/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="sekhonthind@gmail.com"/>
+
+
 </LinearLayout>
 
 
