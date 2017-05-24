@@ -47,7 +47,7 @@ public class Calendar extends Activity {
     public ArrayList items; // container to store calendar items which
     // needs showing the event marker
     String selectedGridDate;
-
+//helllo
     RadioGroup radioGroup;
 
     public void onCreate(Bundle savedInstanceState) {
