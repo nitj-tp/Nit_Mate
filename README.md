@@ -33,3 +33,6 @@ It provide interface for college students to provide details of the items lost b
 Motivational Video
 
 The entertaining element of our application is that it provide selected funny and motivational videos. It contains youtube integration the video are shown directly in youtube by tapping thumbnail of the list.
+
+
+You can download and install apk from Nit_Mate.apk file.
