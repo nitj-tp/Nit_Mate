@@ -58,7 +58,7 @@ public class Calendar extends Activity {
          ttl = (TextView)findViewById(R.id.total);
         pcnt = (TextView)findViewById(R.id.percent);
         datedb = new DateDb(getApplicationContext());
-
+//context
         Context cont=datedb.selectall();
         db = cont.openOrCreateDatabase("StudentSub",Context.MODE_PRIVATE,null);
         presentShow();
