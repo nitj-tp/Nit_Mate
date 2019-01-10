@@ -1,6 +1,6 @@
 # Nit_Mate
 
-NitMate is a college information management system which includes Attendance updates, Placements managemen,Esteemed students (which helps to motivate the students and also these students represents the college excellence), complaints box, Lost Found item updates and Motivational Videos.
+NitMate is a college information management system which includes Attendance updates, Placements management,Esteemed students (which helps to motivate the students and also these students represents the college excellence), complaints box, Lost Found item updates and Motivational Videos.
 
 
 Attendance Management
